@@ -1,11 +1,15 @@
-try:
-    baseMaior = float(input("Digite a base maior: "))
-    baseMenor = float(input("Digite a base menor: "))
-    altura = float(input("Digite a altura: "))
+while True:
+    try:
+        baseMaior = float(input("Digite a base maior: "))
+        baseMenor = float(input("Digite a base menor: "))
+        altura = float(input("Digite a altura: "))
 
-    area = (baseMaior + baseMenor) * altura / 2
+        area = (baseMaior + baseMenor) * altura / 2
 
-    print(f"A área do trapézio é: {area:.2f}")
+        print(f"A área do trapézio é: {area:.2f}")
     
-except ValueError:
-    print("\nÉ necessario digitar apenas números!")
+    except ValueError:
+        print("\nÉ necessario digitar apenas números!\n")
+    else:
+        break
+
